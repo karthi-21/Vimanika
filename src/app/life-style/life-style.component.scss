@@ -1,0 +1,5 @@
+.overlap-images{ position: relative; padding:15px; }
+@media only screen and (max-width: 768px){ .overlap-images{ overflow:hidden; } }
+.overlap-images .item{ position: relative; width: 100%; padding: 11% 11% 19%; }
+.overlap-images .item:not(:first-child){ position: absolute; left:50%; top:50%; -webkit-transform:translate(-50%, -50%); -ms-transform:translate(-50%, -50%); transform:translate(-50%, -50%); }
+.overlap-images .item img{ width: 100%; display: block; }

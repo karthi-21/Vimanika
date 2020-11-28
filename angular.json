@@ -30,7 +30,8 @@
             "styles": [
               "src/styles.scss"
             ],
-            "scripts": []
+            "scripts": [
+            ]
           },
           "configurations": {
             "production": {
@@ -123,6 +124,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "vinmika"
+    }
+  },
+  "defaultProject": "vinmika",
+  "cli": {
+    "analytics": "4aba88d4-5607-437c-b305-943ee798e953"
+  }
 }
