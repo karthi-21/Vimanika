@@ -161,10 +161,10 @@
 	.fullscreen{width: 100%; min-height: 100%; left:0; top:0;}
 	.bg-changeable{ -webkit-transition: background 0.3s; -moz-transition: background 0.3s; transition: background 0.3s; }
 	.bg-pattern, .bg-pattern>.bg-animator:after{ background-repeat: repeat !important; background-size: auto auto !important; }
-	.pattern:after{background-image:url(../../assets/images/pattern.png); background-repeat: repeat; background-size: auto; }
-	.pattern1:after{background-image:url(../../assets/images/pattern1.jpg); background-repeat: repeat; background-size: auto; }
-	.pattern-black:after{background-image:url(../../assets/images/pattern-black.png); background-repeat: repeat; background-size: auto; }
-	.pattern-white:after{background-image:url(../../assets/images/pattern-white.png); background-repeat: repeat; background-size: auto; }
+	.pattern:after{background-image:url(assets/images/pattern.png); background-repeat: repeat; background-size: auto; }
+	.pattern1:after{background-image:url(assets/images/pattern1.jpg); background-repeat: repeat; background-size: auto; }
+	.pattern-black:after{background-image:url(assets/images/pattern-black.png); background-repeat: repeat; background-size: auto; }
+	.pattern-white:after{background-image:url(assets/images/pattern-white.png); background-repeat: repeat; background-size: auto; }
 	.halfwidth{width: 50%; max-width: 50%;}
 	.width-auto{width: auto !important;}
 	.height-auto{height: auto;}
@@ -616,10 +616,10 @@
 /* Divider 2 Styles */
 	.divider-2>span:before,.divider-2>span:after{ background-color:transparent; border-color:#ddd; border-style: solid; border-width: 0px; border-top-width: 1px; border-bottom-width: 1px; height: 6px; margin-top:-3px; }
 /* Divider 3 Styles */
-	.divider-3>span:before,.divider-3>span:after,.divider-4>span:before,.divider-4>span:after{ height: 6px; background-color: transparent; background-image:url(../../assets/images/divider-3.png); background-repeat: repeat-x; margin-top:-4px; }
+	.divider-3>span:before,.divider-3>span:after,.divider-4>span:before,.divider-4>span:after{ height: 6px; background-color: transparent; background-image:url(assets/images/divider-3.png); background-repeat: repeat-x; margin-top:-4px; }
 /* Divider 4 Styles */
-	.divider-4>span:before{ background-image: url(../../assets/images/divider-4.png);}
-	.divider-4>span:after{ background-image: url(../../assets/images/divider-4-left.png);}
+	.divider-4>span:before{ background-image: url(assets/images/divider-4.png);}
+	.divider-4>span:after{ background-image: url(assets/images/divider-4-left.png);}
 /* Divider 5 Styles */
 	.divider-5>span:before,.divider-5>span:after{ background-color:transparent; border-top:1px dashed #aaa; }
 /* Divider 5 Styles */
@@ -722,7 +722,7 @@
 	.lg-outer .lg-thumb-item{ border:0px solid transparent; border-radius: 0; }
 	.lg-outer .lg-thumb-item img{ opacity: 0.8; -webkit-transition: all 0.3s; -moz-transition: all 0.3s; transition: all 0.3s; }
 	.lg-outer .lg-thumb-item.active img{ opacity: 1; }
-	.lg-outer .lg-item{background:url(../../assets/images/loader2.gif) center center no-repeat;}
+	.lg-outer .lg-item{background:url(assets/images/loader2.gif) center center no-repeat;}
 	.lg-backdrop,.lg-outer{ z-index: 1650; }
 	.lg-outer .lg-video { -webkit-overflow-scrolling: touch; overflow: auto; }
 	/* Left Right Buttons */
@@ -1157,7 +1157,7 @@
 	textarea.classic_form{ min-height: 100px; resize: none; margin-bottom:7px; }
 	textarea.classic_form.big{ min-height: 150px; resize: none; }
 	textarea.classic_form.large{ min-height: 200px; resize: none; }
-	select.classic_form{ cursor: pointer; background: url(../../assets/images/bottom_black.png) right 16px center no-repeat transparent; -webkit-appearance:none; background-size:12px 6px; }
+	select.classic_form{ cursor: pointer; background: url(assets/images/bottom_black.png) right 16px center no-repeat transparent; -webkit-appearance:none; background-size:12px 6px; }
 /* PlaceHolder Colors */
 	.classic_form::-webkit-input-placeholder{color: #777;}
 	.classic_form:-moz-placeholder{color: #777;}
@@ -1246,10 +1246,10 @@
 	.qdr-controls .slick-arrow,.qdr-controls-2 .slick-arrow{width: 32px; height:60px; font-size:0px; border:none; background-color:#151515; background-position: center center; background-repeat: no-repeat; position: absolute; z-index: 1; top:50%; margin-top:-20px; opacity:0; -webkit-transition: opacity 0.4s ease-in-out 0s; -moz-transition: opacity 0.4s ease-in-out 0s; transition: opacity 0.4s ease-in-out 0s;}
 	.qdr-controls:hover .slick-arrow,.qdr-controls-2:hover .slick-arrow{opacity: 0.6;}
 	.qdr-controls .slick-arrow:hover,.qdr-controls-2 .slick-arrow:hover{opacity: 1;}
-	.qdr-controls .slick-arrow.slick-prev{left:10px; background-image:url(../../assets/images/white-left.png);}
-	.qdr-controls .slick-arrow.slick-next{right:10px; background-image:url(../../assets/images/white-right.png);}
-	.qdr-controls-2 .slick-arrow.slick-prev{left:0; background-image:url(../../assets/images/white-left.png);}
-	.qdr-controls-2 .slick-arrow.slick-next{right:0; background-image:url(../../assets/images/white-right.png);}
+	.qdr-controls .slick-arrow.slick-prev{left:10px; background-image:url(assets/images/white-left.png);}
+	.qdr-controls .slick-arrow.slick-next{right:10px; background-image:url(assets/images/white-right.png);}
+	.qdr-controls-2 .slick-arrow.slick-prev{left:0; background-image:url(assets/images/white-left.png);}
+	.qdr-controls-2 .slick-arrow.slick-next{right:0; background-image:url(assets/images/white-right.png);}
 	.qdr-controls ul.slick-dots{position:absolute; width: 100%; bottom:10px; margin:0; }
 	.qdr-controls .slick-dots li{position: relative; display: inline-block; margin: 0 4px; font-size:0;}
 	.qdr-controls .slick-dots li button{border:2px solid #ddd; background:transparent; outline: none; border-radius: 100%; width: 13px; height: 13px; padding: 0 !important; position: relative; overflow: hidden; opacity: 0; -webkit-transition: all 0.3s ease-in-out 0s; -moz-transition: all 0.3s ease-in-out 0s; transition: all 0.3s ease-in-out 0s;}
@@ -1260,10 +1260,10 @@
 	.qdr-controls-1 .slick-arrow{width: 30px; height:30px; font-size:0px; left:5px; bottom:5px; border:none; background-color: rgba(45,45,45,0.9); background-position: center center; background-repeat: no-repeat; position: absolute; z-index: 1; opacity:0; -webkit-transition: all 0.4s ease-in-out 0s; -moz-transition: all 0.4s ease-in-out 0s; transition: all 0.4s ease-in-out 0s;}
 	.qdr-controls-1 .slick-arrow:hover{background-color:white;}
 	.qdr-controls-1:hover .slick-arrow{opacity: 1;}
-	.qdr-controls-1 .slick-arrow.slick-prev{background-image:url(../../assets/images/white-left.png); }
-	.qdr-controls-1 .slick-arrow.slick-next{background-image:url(../../assets/images/white-right.png); margin-left:35px;}
-	.qdr-controls-1 .slick-arrow.slick-prev:hover{background-image:url(../../assets/images/black-left.png);}
-	.qdr-controls-1 .slick-arrow.slick-next:hover{background-image:url(../../assets/images/black-right.png);}
+	.qdr-controls-1 .slick-arrow.slick-prev{background-image:url(assets/images/white-left.png); }
+	.qdr-controls-1 .slick-arrow.slick-next{background-image:url(assets/images/white-right.png); margin-left:35px;}
+	.qdr-controls-1 .slick-arrow.slick-prev:hover{background-image:url(assets/images/black-left.png);}
+	.qdr-controls-1 .slick-arrow.slick-next:hover{background-image:url(assets/images/black-right.png);}
 	/* Type 2 Dots */
 	.qdr-controls-1 .slick-dots{position: absolute;bottom: 15px;right: 6px; margin:0;}
 	.qdr-controls-1 .slick-dots li{font-size: 0;float: left;display: block;}
@@ -1279,8 +1279,8 @@
 	/* Type 4 arrows */
 	.qdr-controls-3 .slick-arrow{width: 30px; height:30px; font-size:0px; left:50%; bottom:-60px; border:none; background-color: rgba(255,255,255,0.9); opacity: .5; background-position: center center; background-repeat: no-repeat; position: absolute; z-index: 1; -webkit-transition: all 0.4s ease-in-out 0s; -moz-transition: all 0.4s ease-in-out 0s; transition: all 0.4s ease-in-out 0s; -webkit-transform: translateX(-35px);-moz-transform: translateX(-35px);-ms-transform: translateX(-35px);transform: translateX(-35px);}
 	.qdr-controls-3 .slick-arrow:hover{background-color:white; opacity: 1;}
-	.qdr-controls-3 .slick-arrow.slick-prev{background-image:url(../../assets/images/black-left.png);}
-	.qdr-controls-3 .slick-arrow.slick-next{background-image:url(../../assets/images/black-right.png); margin-left:35px;}
+	.qdr-controls-3 .slick-arrow.slick-prev{background-image:url(assets/images/black-left.png);}
+	.qdr-controls-3 .slick-arrow.slick-next{background-image:url(assets/images/black-right.png); margin-left:35px;}
 	/* Type 4 dots */
 	.qdr-controls-3 .slick-dots{ position: absolute; width: 100%; bottom: 0; left: 0; right: 0; text-align:center; }
 	.qdr-controls-3 .slick-dots li{ font-size: 0; display: inline-block; }
@@ -1304,11 +1304,11 @@
 	.corner-arrows button.slick-arrow{font-size:0;font-size: 0;position: absolute;z-index: 2;bottom: 4px;width: 30px;height: 30px;border:none;background:#fff;opacity: 1;-webkit-transition: all 0.5s;-moz-transition: all 0.5s;transition: all 0.5s;}
 	.corner-arrows button.slick-arrow,.corner-arrows button.slick-arrow:before{color:#7a7a7a;font-size:20px;background-repeat: no-repeat;background-position: center center; }
 	/* Next */
-	.corner-arrows button.slick-arrow.slick-next{right: 4px;background-image:url(../../assets/images/black-right.png);}
-	.corner-arrows button.slick-arrow.slick-next:before{background-image:url(../../assets/images/white-right.png);}
+	.corner-arrows button.slick-arrow.slick-next{right: 4px;background-image:url(assets/images/black-right.png);}
+	.corner-arrows button.slick-arrow.slick-next:before{background-image:url(assets/images/white-right.png);}
 	/* Prev */
-	.corner-arrows button.slick-arrow.slick-prev{right: 38px;background-image:url(../../assets/images/black-left.png);}
-	.corner-arrows button.slick-arrow.slick-prev:before{right: 38px;background-image:url(../../assets/images/white-left.png);}
+	.corner-arrows button.slick-arrow.slick-prev{right: 38px;background-image:url(assets/images/black-left.png);}
+	.corner-arrows button.slick-arrow.slick-prev:before{right: 38px;background-image:url(assets/images/white-left.png);}
 		@media only screen and (max-width: 481px){ .slick-slide img{ width: 100%; } }
 	.centermode .slick-slide img{ -webkit-transition: all 0.5s;-moz-transition: all 0.5s;transition: all 0.5s; opacity: 0.8; }
 	.centermode .slick-center img{ -ms-transform: scale(1.2); -webkit-transform: scale(1.2); transform: scale(1.2); opacity: 1;}
@@ -2555,7 +2555,7 @@
 	.services-with-product .services-body li.br-right{border-right-width:1px;}
 	.services-with-product .services-body li.br-bottom{border-bottom-width:1px;}
 	/* Tooltip Buttons */
-	.services-with-product .services-body li a{ width: 30px; height: 30px; background-color:#666; display: block; position: absolute; background-position: center center; background-repeat: no-repeat; cursor: cell; background-image:url(../../assets/images/plus-white.png);}
+	.services-with-product .services-body li a{ width: 30px; height: 30px; background-color:#666; display: block; position: absolute; background-position: center center; background-repeat: no-repeat; cursor: cell; background-image:url(assets/images/plus-white.png);}
 	.services-with-product .services-body li a:hover{ background-color:#393939; }
 	/* Points */
 	.services-with-product .services-body li span{ display: block; width: 10px; height: 10px; position: absolute; border-radius: 100%; background-color:#c7c7c7; }
@@ -3156,7 +3156,7 @@
 	.modal .modal-promo{padding:150px 40px; max-width: 1170px; background-size: cover; background-position: center center; }
 	/* Slick Slider in Modal */
 		@media only screen and (max-width: 1024px){
-			.modal .slick-slider{ background: url(../../assets/images/loader.gif) center center no-repeat; min-height: 100px; }
+			.modal .slick-slider{ background: url(assets/images/loader.gif) center center no-repeat; min-height: 100px; }
 			.modal .slick-slider .slick-list{ opacity: 0; -webkit-transition: opacity 0.4s; -moz-transition: opacity 0.4s; transition: opacity 0.4s; }
 			.modal .slick-slider.modal-active .slick-list{ opacity: 1; }
 			.modal .slick-slider.modal-active{ background: none; }
