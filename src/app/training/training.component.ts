@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+declare let $: any;
 
 @Component({
   selector: 'app-training',
@@ -10,6 +11,7 @@ export class TrainingComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+    $('.animated').addClass('visible');
   }
 
 }
