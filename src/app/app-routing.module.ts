@@ -8,6 +8,7 @@ import { LifeStyleComponent } from './life-style/life-style.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { ServiceComponent } from './service/service.component';
 import { TrainingComponent } from './training/training.component';
+import { CoeMouComponent } from './coe-mou/coe-mou.component';
 
 
 const routes: Routes = [
@@ -15,6 +16,7 @@ const routes: Routes = [
   { path: 'service', component: ServiceComponent },
   { path: 'life-style', component: LifeStyleComponent },
   { path: 'training', component: TrainingComponent },
+  { path: 'coe-mou', component: CoeMouComponent },
   { path: 'course', component: CourseComponent },
   { path: 'career', component: CareerComponent },
   { path: 'contact', component: ContactUsComponent },

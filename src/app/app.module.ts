@@ -13,6 +13,7 @@ import { TrainingComponent } from './training/training.component';
 import { CourseComponent } from './course/course.component';
 import { LifeStyleComponent } from './life-style/life-style.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { CoeMouComponent } from './coe-mou/coe-mou.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
     TrainingComponent,
     CourseComponent,
     LifeStyleComponent,
-    PageNotFoundComponent
+    PageNotFoundComponent,
+    CoeMouComponent
   ],
   imports: [
     BrowserModule,
