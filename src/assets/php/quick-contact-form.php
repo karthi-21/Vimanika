@@ -28,21 +28,21 @@ $mail->SMTPDebug = 2;
 //Ask for HTML-friendly debug output
 $mail->Debugoutput = 'html';
 //Set the hostname of the mail server
-$mail->Host = "smtp.example.com";
+$mail->Host = "smtp.gmail.com";
 //Set the SMTP port number - likely to be 25, 465 or 587
 $mail->Port = 587;
 //Whether to use SMTP authentication
 $mail->SMTPAuth = true;
 //Username to use for SMTP authentication
-$mail->Username = "noreply@example.com";
+$mail->Username = "kkeyan210@gmail.com";
 //Password to use for SMTP authentication
-$mail->Password = "yourpassword";
+$mail->Password = "Karthi2198";
 //Set who the message is to be sent from
-$mail->setFrom('noreply@example.com', 'Quadra Exclusive Theme');
+$mail->setFrom('kkeyan210@gmail.com', 'Quick form');
 //Set an alternative reply-to address
 $mail->addReplyTo($email);
 //Set who the message is to be sent to
-$mail->addAddress('whoto@example.com', 'John Doe');
+$mail->addAddress('kkeyan210@gmail.com', 'Karthi quick form');
 //Set the subject line
 $mail->Subject = "New Message From Quadra - Quick contact form";
 //Read an HTML message body from an external file, convert referenced images to embedded,
