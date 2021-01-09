@@ -114,7 +114,8 @@
     <!-- Form -->
     <div id="form" class="sm-mt t-center gray7">
       <!-- Contact Form -->
-      <form id="contact_form" name="contact_form" method="post" action="assets/php/mail.php">
+      <!-- method="post" action="assets/php/mail.php"  -->
+      <form id="contact_form" name="contact_form">
         <!-- Half Inputs -->
         <div class="half clearfix">
           <!-- Name -->
@@ -145,7 +146,7 @@
 
         </div>
         <!-- Send Button -->
-        <button type="submit" id="submit"
+        <button (click)="sendEmail()"
           class="bg-colored1 xl-btn font-12 long-btn xxs-mt slow width-auto click-effect white bold qdr-hover-6 radius-lg">SEND
           MESSAGE</button>
       </form>

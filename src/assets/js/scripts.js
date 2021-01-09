@@ -19,7 +19,7 @@ $(window).on('load', function() {
 		var isOpera = (!!window.opr && !!opr.addons) || !!window.opera || navigator.userAgent.indexOf(' OPR/') >= 0,
 			// Firefox 1.0+
 			isFirefox = typeof InstallTrigger !== 'undefined',
-			// Safari 3.0+ "[object HTMLElementConstructor]" 
+			// Safari 3.0+ "[object HTMLElementConstructor]"
 			isSafari = /constructor/i.test(window.HTMLElement) || (function (p) { return p.toString() === "[object SafariRemoteNotification]"; })(!window['safari'] || safari.pushNotification),
 			// Internet Explorer 6-11
 			isIE = /*@cc_on!@*/false || !!document.documentMode,
@@ -73,14 +73,14 @@ $(window).on('load', function() {
 
             //Set the parallax items
             $('body').addClass('stable');
-            $(window).on("scroll", function(){ 
-                if($('body').hasClass('stable')){ 
+            $(window).on("scroll", function(){
+                if($('body').hasClass('stable')){
                 	//Refresh parallax effect
                 	setTimeout( function(){ if (isParallaxBrowsers) { var s = skrollr.init({ forceHeight: false }); s.refresh();  } }, 100);
                     $(window).trigger("resize");
-                    $('body').removeClass('stable'); 
-                } 
-            });  
+                    $('body').removeClass('stable');
+                }
+            });
 
             $('#extranav').ready(function(){
                 //Show and hide extra Navigation
@@ -116,8 +116,8 @@ $(window).on('load', function() {
             return ((window.matchMedia && (window.matchMedia('only screen and (min-resolution: 124dpi), only screen and (min-resolution: 1.3dppx), only screen and (min-resolution: 48.8dpcm)').matches || window.matchMedia('only screen and (-webkit-min-device-pixel-ratio: 1.3), only screen and (-o-min-device-pixel-ratio: 2.6/2), only screen and (min--moz-device-pixel-ratio: 1.3), only screen and (min-device-pixel-ratio: 1.3)').matches)) || (window.devicePixelRatio && window.devicePixelRatio > 1.3));
         }
         //Add .retina-device class to body if the device is retina. And change images for retina screens
-        if (isRetina()) { 
-            $("body").addClass("retina-device"); 
+        if (isRetina()) {
+            $("body").addClass("retina-device");
             $("[data-retina-image]").each(function(){
                 var $this = $(this), $itemWidth = $(this).width(), $rtnIMG = $(this).attr("data-retina-image");
                 $(this).attr("src", $rtnIMG).css({"width": $itemWidth + "px"});
@@ -249,7 +249,7 @@ $(window).on('load', function() {
                             currentX = e.pageX;
                             if(currentY == '') currentY = e.pageY;
                             var ydiff = e.pageY - currentY;
-                            currentY = e.pageY; 
+                            currentY = e.pageY;
                             $(item).find('.cbp-caption-defaultWrap').each(function(i, el) {
                                 var movement = (i + 1) * (xdiff * movementConstant),
                                 movementy = (i + 1) * (ydiff * movementConstant),
@@ -265,7 +265,7 @@ $(window).on('load', function() {
                 });
             }
         }
-    //Call fitvids 
+    //Call fitvids
         if ($(".fitvids").exists()){
             $(".fitvids").fitVids();
         }
@@ -474,29 +474,6 @@ $(window).on('load', function() {
             })
 
         }
-    //Twitter Feed
-        if ($(".twitter-feed").exists()) {
-            $('.twitter-feed').each(function(){
-                var twitterFeeder = $(this),
-                    username = $(twitterFeeder).data('username'),
-                    count = $(twitterFeeder).data('count'),
-                    gap = $(twitterFeeder).data('gap');
-                    $(twitterFeeder).html('Loading Tweets...');
-                $.getJSON( "php/twitter.php?un=" + username + "&count="+ count , function( data ) {
-                    $(twitterFeeder).empty();
-                    var items = [];
-                    $.each( data, function( key, val ) {
-                        items.push( "<li id='" + key + "'><a href='https://twitter.com/goldeyes/status/"+ val.id +"' target='_blank'><i class='fa fa-twitter'></i>" + val.text + "<span>Posted on "+ val.date +"</span></a></li>" );
-                    });
-                    $( "<ul/>", { "class": "twitter-list", html: items.join( "" ) }).appendTo(twitterFeeder);
-                    $(twitterFeeder).find('ul.twitter-list').addClass("gap-"+gap+"");
-                    if ( $('.twitter-feed').hasClass('slider') ) {
-                        var sliderFeeder = $('.twitter-feed.slider');
-                        $(sliderFeeder).find('ul.twitter-list').addClass("twitter-slider circle-dots").slick({ dots: true, arrows: false, slidesToShow: 1, slidesToScroll: 1, adaptiveHeight: true });
-                    }
-                });
-            });
-        }
     //Click effect
         $(function(){
             var ink, d, x, y;
@@ -618,14 +595,14 @@ $(window).on('load', function() {
                 if ($(window).scrollTop() > 100) { $('#navigation').scrollDownNav(); }
                 else {  $('#navigation').scrollUpNav(); }
             }
-            if ($(this).scrollTop() > 0) { 
-                if (!$(navigationShrink).hasClass("scrolled")) { 
-                    $(navigationShrink).shrinkActive(); 
-                } 
-            } else { 
-                if ($(navigationShrink).hasClass("scrolled")) { 
-                    $(navigationShrink).shrinkDisable();  
-                } 
+            if ($(this).scrollTop() > 0) {
+                if (!$(navigationShrink).hasClass("scrolled")) {
+                    $(navigationShrink).shrinkActive();
+                }
+            } else {
+                if ($(navigationShrink).hasClass("scrolled")) {
+                    $(navigationShrink).shrinkDisable();
+                }
             }
             //Use Shrink Navigation With Sticky
             if ($('#navigation-sticky-wrapper').exists()) {
@@ -1201,10 +1178,10 @@ $(window).on('load', function() {
     //*********************************************
     // Refresh parallax effect, lightbox, icon navigation when click portfolio filters
     //*********************************************
-        $('.cbp-l-loadMore-button, [data-toggle]:not([data-toggle="popover"]), .cbp-filter-item, .cbp-l-loadMore-link').on('click', function(){ 
-            setTimeout( function(){ if (isParallaxBrowsers && mobile === false) { 
+        $('.cbp-l-loadMore-button, [data-toggle]:not([data-toggle="popover"]), .cbp-filter-item, .cbp-l-loadMore-link').on('click', function(){
+            setTimeout( function(){ if (isParallaxBrowsers && mobile === false) {
                 $(window).data('plugin_stellar').refresh(); 
-                var s = skrollr.init({ forceHeight: false }); s.refresh(); 
+                var s = skrollr.init({ forceHeight: false }); s.refresh();
                 $(".icon-navigation").addClass("slow");
             } Waypoint.refreshAll(); }, 500);
             setTimeout( function(){$(".icon-navigation").removeClass("slow");}, 1400);
@@ -1228,7 +1205,7 @@ $(window).on('load', function() {
                 if ($(".lightbox").exists()) { $(".lightbox").data('lightGallery').destroy(true); $(window).callLightbox(); }
             }
         });
-        
+
 
     //*********************************************
     //  VIDEO COMPATIBILITY ON SLICK SLIDER
@@ -1327,7 +1304,7 @@ $(window).on('load', function() {
             //Animated Items
             $('body').animatedItems();
             // Refresh the parallax
-            if (isParallaxBrowsers && mobile === false) {$(window).data('plugin_stellar').refresh(); }  
+            if (isParallaxBrowsers && mobile === false) {$(window).data('plugin_stellar').refresh(); }
             //Calculate Height
             setTimeout( function(){ $('.calculate-height').calculateHeight(); }, 30);
             //Make Min Height Full
@@ -1458,7 +1435,7 @@ $(window).on('load', function() {
     //*********************************************
 
 
-    
+
 
     //Get Background Image
         $("[data-background]").not('.bg-mobiled').each(function () {
