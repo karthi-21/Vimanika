@@ -14,6 +14,7 @@ import { CourseComponent } from './course/course.component';
 import { LifeStyleComponent } from './life-style/life-style.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { CoeMouComponent } from './coe-mou/coe-mou.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -32,7 +33,9 @@ import { CoeMouComponent } from './coe-mou/coe-mou.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

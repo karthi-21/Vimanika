@@ -197,44 +197,46 @@
     <!-- Col -->
     <div class="col-md-5 col-12">
       <!-- Contact Form -->
-      <form class="quick_form relative" name="career_form" id="career_form" method="POST" data-netlify="true" netlify>
+      <form class="quick_form relative" [formGroup]="careerFrom" (ngSubmit)="sendEmail()" novalidate>
         <!-- Name -->
         <label>Name:*</label>
-        <input type="text" name="name" id="name" required class="classic_form radius">
+        <input type="text" name="name" id="name" formControlName="name" required class="classic_form radius">
         <!-- Email -->
         <label>Email:*</label>
-        <input type="email" name="email" id="email" required class="classic_form radius">
+        <input type="email" name="email" id="email" formControlName="email" required class="classic_form radius">
         <!-- Half -->
         <div class="clearfix">
           <div class="col-xs-6 pl-0">
             <label>Age:*</label>
-            <input type="number" name="age" id="age" required class="classic_form radius">
+            <input type="number" name="age" id="age" formControlName="age" required class="classic_form radius">
           </div>
           <div class="col-xs-6 pr-0">
             <label>Website/Blog:</label>
-            <input type="text" name="license" id="license" class="classic_form radius">
+            <input type="text" name="web" id="web" formControlName="web" class="classic_form radius">
           </div>
         </div>
         <!-- Date -->
         <label>Start Date:*</label>
-        <input type="date" name="license" id="license" required placeholder="Choose a date"
+        <input type="date" name="stDt" id="stDt" formControlName="stDt" required placeholder="Choose a date"
           class="classic_form radius datepicker">
         <!-- Position -->
         <label>Choose a Position:*</label>
-        <select name="position" form="career_form" required class="classic_form">
+        <select name="position" name="pos" id="pos" formControlName="pos" form="career_form" required class="classic_form">
           <option value="">Select a Position</option>
-          <option value="System Engineer ( UAV Pilot & System Integration)">System Engineer ( UAV Pilot & System Integration)</option>
+          <option value="System Engineer ( UAV Pilot & System Integration)">System Engineer ( UAV Pilot & System
+            Integration)</option>
           <option value="Design Engineer (CAD,CAM & FEA )">Design Engineer (CAD,CAM & FEA )</option>
           <option value="UAV Pilot & Instructor">UAV Pilot & Instructor</option>
           <option value="Microcontroller Programmer">Microcontroller Programmer</option>
-          <option value="Office Assistant, Business Development, Purchase">Office Assistant, Business Development, Purchase</option>
+          <option value="Office Assistant, Business Development, Purchase">Office Assistant, Business Development,
+            Purchase</option>
         </select>
         <!-- Experience -->
         <label>Experience:</label>
-        <textarea name="Experience" id="experience" required class="classic_form radius"></textarea>
+        <textarea name="exp" id="exp" formControlName="exp" class="classic_form radius"></textarea>
         <!-- Message -->
         <label>Message:</label>
-        <textarea name="message" id="message" class="classic_form radius big"></textarea>
+        <textarea name="msg" id="msg" formControlName="msg" class="classic_form radius big"></textarea>
         <!-- Send Button -->
         <button type="submit" id="submit"
           class="bg-colored white qdr-hover-1 click-effect fullwidth lg-btn uppercase extrabold">Send</button>
