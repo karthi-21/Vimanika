@@ -40,7 +40,7 @@ export class CareerComponent implements OnInit {
       Host : 'smtp.elasticemail.com',
       Username : 'vimanikatechnovatorz@gmail.com',
       Password : '0544EFDA56510501775FD18AB029E96ACEE4',
-      To: 'vimanikatechnovatorz@gmail.com',
+      To: 'info2vtz@gmail.com',
       From: 'vimanikatechnovatorz@gmail.com',
       Subject: this.careerFrom.value.name + ' applied for ' + this.careerFrom.value.pos,
       Body: `Hi there, <br/> There was a new candidate applied for a role in our website. Here's all detail he provided in our site.

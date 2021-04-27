@@ -25,7 +25,7 @@ export class FooterComponent implements OnInit {
       Host : 'smtp.elasticemail.com',
       Username : 'vimanikatechnovatorz@gmail.com',
       Password : '0544EFDA56510501775FD18AB029E96ACEE4',
-      To: 'kkeyan210@gmail.com',
+      To: 'info2vtz@gmail.com',
       From: 'vimanikatechnovatorz@gmail.com',
       Subject: this.quickMsg.value.qname + ' has a quick message for you!',
       Body: `Hi there, <br/> I'm ${ this.quickMsg.value.qname } and my mail address is ${ this.quickMsg.value.qemail }. Here's what I wanted to say,
